@@ -1,0 +1,40 @@
+N consegui resolver o bug
+
+Continua permitindo que add loguin de um usuario que j esta na tabela 
+
+Suposição Ele n esta executando o if userExists  da forma como deveria
+
+
+  corrigido
+    
+            if(userExists !== undefined){
+                throw new Error('Usuário já cadastrado!')
+            }
+  
+  antes 
+  
+            if(userExists){
+                throw new Error('Usuário já cadastrado!')
+            }
+
+Passei 2 dias e mesmo assim não desisti . 
+
+
+Aprendizado 
+  se é um erro da logica da minha aplicação n adianta ficar procurando outros códigos 
+  devo fazer passo a passo de qual funçõess os dados precisão percorrer para que o programa se comporte da maneira que deve aparecer para o cliente
+  leia o código 
+  denovo
+  e denovo
+  e denovo 
+
+
+  Tenha pontualidade sobre o que precisa fazer para corrigir 
+  é alguma função especifica ?   algum erro de sintaxe ?   alguma coisa e eu esqueci de colocar ? alguma coisa que falta ?
+
+  como eu consigo ter maior clareza quando eu n sei o que precisa fazer ? 
+    coloque um console.log em todos as funçõs e ou valores que o dado do usuario vai ter que percorrer no seu fluxo 
+
+
+PROXIMO BUG (o try catch n esta funcionando do jeito que era pra esta exibindo o tipo de erro que aconteceu )
+
